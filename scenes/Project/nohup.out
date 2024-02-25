@@ -1,0 +1,1854 @@
+Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 1.5s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 6.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 6.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 6.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 6.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 6.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 6.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 2.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 1.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 396.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 154.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. done. (V=291127, F=427860, took 1.6s and 13.8 MiB)
+Loading "meshes/seat.obj" .. done. (V=67487, F=117758, took 428.0ms and 3.4 MiB)
+Constructing a SAH BVH (31 meshes, 995593 triangles) .. done (took 794.0ms and 64.6 MiB, SAH cost = 40.4469).
+
+Configuration: Scene[
+  integrator = VolPath[],
+  sampler = Independent[sampleCount=10]
+  camera = PerspectiveCamera[
+    cameraToWorld = [  -0.7524, -0.009198,    0.6586,    -8.115;
+                     3.901e-07,    0.9999,   0.01396,    0.4657;
+                       -0.6587,   0.01051,   -0.7523,     16.24;
+                             0,         0,         0,         1],
+    outputSize = [3840, 2160],
+    fov = 39.597755,
+    clip = [0.100000, 1000.000000],
+    rfilter = GaussianFilter[radius=2.000000, stddev=0.500000]
+  ],
+  meshes = {
+    Mesh[
+      name = "meshes/Train.obj",
+      vertexCount = 378098,
+      triangleCount = 289967,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.000000, 0.000000, 0.000000],
+        ks = 1.000000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/top.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall1.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall2.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/back.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.001.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.002.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.003.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.004.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.005.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.006.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.007.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.008.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Spot_train.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Spot_car.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.005.obj",
+      vertexCount = 4316,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.007.obj",
+      vertexCount = 4278,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.008.obj",
+      vertexCount = 4342,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.009.obj",
+      vertexCount = 4228,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.010.obj",
+      vertexCount = 4326,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.011.obj",
+      vertexCount = 4402,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.001.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.002.obj",
+      vertexCount = 944,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.003.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.004.obj",
+      vertexCount = 946,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.005.obj",
+      vertexCount = 948,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_cover_wheel.obj",
+      vertexCount = 82327,
+      triangleCount = 108416,
+      bsdf = Microfacet[
+        alpha = 0.280000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_support.obj",
+      vertexCount = 38035,
+      triangleCount = 35882,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/MainBody.obj",
+      vertexCount = 291127,
+      triangleCount = 427860,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.700000, 0.200000, 0.200000],
+        ks = 0.300000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/seat.obj",
+      vertexCount = 67487,
+      triangleCount = 117758,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ]
+  }
+]
+
+GLFW error 65544: X11: The DISPLAY environment variable is missing
+Could not initialize GLFW!
+Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 1.6s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 6.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 6.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 6.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 6.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 6.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 6.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 1.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 410.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 159.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. done. (V=291127, F=427860, took 1.6s and 13.8 MiB)
+Loading "meshes/seat.obj" .. done. (V=67487, F=117758, took 445.0ms and 3.4 MiB)
+Constructing a SAH BVH (31 meshes, 995593 triangles) .. done (took 744.0ms and 64.6 MiB, SAH cost = 40.4456).
+
+Configuration: Scene[
+  integrator = VolPath[],
+  sampler = Independent[sampleCount=4000]
+  camera = PerspectiveCamera[
+    cameraToWorld = [  -0.7524, -0.009198,    0.6586,    -8.115;
+                     3.901e-07,    0.9999,   0.01396,    0.4657;
+                       -0.6587,   0.01051,   -0.7523,     16.24;
+                             0,         0,         0,         1],
+    outputSize = [3840, 2160],
+    fov = 39.597755,
+    clip = [0.100000, 1000.000000],
+    rfilter = GaussianFilter[radius=2.000000, stddev=0.500000]
+  ],
+  meshes = {
+    Mesh[
+      name = "meshes/Train.obj",
+      vertexCount = 378098,
+      triangleCount = 289967,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.000000, 0.000000, 0.000000],
+        ks = 1.000000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/top.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall1.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall2.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/back.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.001.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.002.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.003.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.004.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.005.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.006.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.007.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.008.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Spot_train.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Spot_car.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.005.obj",
+      vertexCount = 4316,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.007.obj",
+      vertexCount = 4278,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.008.obj",
+      vertexCount = 4342,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.009.obj",
+      vertexCount = 4228,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.010.obj",
+      vertexCount = 4326,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.011.obj",
+      vertexCount = 4402,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.001.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.002.obj",
+      vertexCount = 944,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.003.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.004.obj",
+      vertexCount = 946,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.005.obj",
+      vertexCount = 948,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_cover_wheel.obj",
+      vertexCount = 82327,
+      triangleCount = 108416,
+      bsdf = Microfacet[
+        alpha = 0.280000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_support.obj",
+      vertexCount = 38035,
+      triangleCount = 35882,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/MainBody.obj",
+      vertexCount = 291127,
+      triangleCount = 427860,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.700000, 0.200000, 0.200000],
+        ks = 0.300000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/seat.obj",
+      vertexCount = 67487,
+      triangleCount = 117758,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ]
+  }
+]
+
+GLFW error 65544: X11: The DISPLAY environment variable is missing
+Could not initialize GLFW!
+Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 1.6s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 6.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 7.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 6.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 6.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 6.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 6.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 1.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 403.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 156.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 1.6s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 2.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 6.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 6.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 6.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 6.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 6.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 6.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 1.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 410.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 158.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. done. (V=291127, F=427860, took 1.6s and 13.8 MiB)
+Loading "meshes/seat.obj" .. done. (V=67487, F=117758, took 441.0ms and 3.4 MiB)
+Constructing a SAH BVH (31 meshes, 995593 triangles) .. done (took 752.0ms and 64.6 MiB, SAH cost = 40.4462).
+
+Configuration: Scene[
+  integrator = VolPath[],
+  sampler = Independent[sampleCount=4000]
+  camera = PerspectiveCamera[
+    cameraToWorld = [  -0.7524, -0.009198,    0.6586,    -8.115;
+                     3.901e-07,    0.9999,   0.01396,    0.4657;
+                       -0.6587,   0.01051,   -0.7523,     16.24;
+                             0,         0,         0,         1],
+    outputSize = [3840, 2160],
+    fov = 39.597755,
+    clip = [0.100000, 1000.000000],
+    rfilter = GaussianFilter[radius=2.000000, stddev=0.500000]
+  ],
+  meshes = {
+    Mesh[
+      name = "meshes/Train.obj",
+      vertexCount = 378098,
+      triangleCount = 289967,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.000000, 0.000000, 0.000000],
+        ks = 1.000000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/top.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall1.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall2.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/back.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.001.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.002.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.003.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.004.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.005.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.006.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.007.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.008.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Spot_train.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Spot_car.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.005.obj",
+      vertexCount = 4316,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.007.obj",
+      vertexCount = 4278,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.008.obj",
+      vertexCount = 4342,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.009.obj",
+      vertexCount = 4228,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.010.obj",
+      vertexCount = 4326,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.011.obj",
+      vertexCount = 4402,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.001.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.002.obj",
+      vertexCount = 944,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.003.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.004.obj",
+      vertexCount = 946,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.005.obj",
+      vertexCount = 948,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_cover_wheel.obj",
+      vertexCount = 82327,
+      triangleCount = 108416,
+      bsdf = Microfacet[
+        alpha = 0.280000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_support.obj",
+      vertexCount = 38035,
+      triangleCount = 35882,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/MainBody.obj",
+      vertexCount = 291127,
+      triangleCount = 427860,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.700000, 0.200000, 0.200000],
+        ks = 0.300000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/seat.obj",
+      vertexCount = 67487,
+      triangleCount = 117758,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ]
+  }
+]
+
+GLFW error 65544: X11: The DISPLAY environment variable is missing
+Could not initialize GLFW!
+Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 2.3s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 3.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 3.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 9.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 9.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 9.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 9.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 9.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 9.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 2.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 2.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 2.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 2.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 2.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 594.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 230.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. done. (V=291127, F=427860, took 2.4s and 13.8 MiB)
+Loading "meshes/seat.obj" .. done. (V=67487, F=117758, took 634.0ms and 3.4 MiB)
+Constructing a SAH BVH (31 meshes, 995593 triangles) .. done (took 1.1s and 64.6 MiB, SAH cost = 40.4467).
+
+Configuration: Scene[
+  integrator = VolPath[],
+  sampler = Independent[sampleCount=4000]
+  camera = PerspectiveCamera[
+    cameraToWorld = [  -0.7524, -0.009198,    0.6586,    -8.115;
+                     3.901e-07,    0.9999,   0.01396,    0.4657;
+                       -0.6587,   0.01051,   -0.7523,     16.24;
+                             0,         0,         0,         1],
+    outputSize = [3840, 2160],
+    fov = 39.597755,
+    clip = [0.100000, 1000.000000],
+    rfilter = GaussianFilter[radius=2.000000, stddev=0.500000]
+  ],
+  meshes = {
+    Mesh[
+      name = "meshes/Train.obj",
+      vertexCount = 378098,
+      triangleCount = 289967,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.000000, 0.000000, 0.000000],
+        ks = 1.000000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/top.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall1.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall2.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/back.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.001.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.002.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.003.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.004.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.005.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.006.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.007.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.008.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Spot_train.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Spot_car.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.005.obj",
+      vertexCount = 4316,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.007.obj",
+      vertexCount = 4278,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.008.obj",
+      vertexCount = 4342,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.009.obj",
+      vertexCount = 4228,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.010.obj",
+      vertexCount = 4326,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.011.obj",
+      vertexCount = 4402,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.001.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.002.obj",
+      vertexCount = 944,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.003.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.004.obj",
+      vertexCount = 946,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.005.obj",
+      vertexCount = 948,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_cover_wheel.obj",
+      vertexCount = 82327,
+      triangleCount = 108416,
+      bsdf = Microfacet[
+        alpha = 0.280000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_support.obj",
+      vertexCount = 38035,
+      triangleCount = 35882,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/MainBody.obj",
+      vertexCount = 291127,
+      triangleCount = 427860,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.700000, 0.200000, 0.200000],
+        ks = 0.300000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/seat.obj",
+      vertexCount = 67487,
+      triangleCount = 117758,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ]
+  }
+]
+
+GLFW error 65544: X11: The DISPLAY environment variable is missing
+Could not initialize GLFW!
+Reading a 2048x2048 OpenEXR file from "right.exr"
+Reading a 2048x2048 OpenEXR file from "left.exr"
+Reading a 2048x2048 OpenEXR file from "top.exr"
+Reading a 2048x2048 OpenEXR file from "bottom.exr"
+Reading a 2048x2048 OpenEXR file from "front.exr"
+Reading a 2048x2048 OpenEXR file from "back.exr"
+Loading "meshes/Train.obj" .. done. (V=378098, F=289967, took 2.4s and 14.9 MiB)
+Loading "meshes/top.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Loading "meshes/wall1.obj" .. done. (V=1232, F=1232, took 3.0ms and 43.3 KiB)
+Loading "meshes/wall2.obj" .. done. (V=1232, F=1232, took 3.0ms and 43.3 KiB)
+Loading "meshes/back.obj" .. done. (V=0, F=0, took 0.0ms and 0 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.001.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.002.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.003.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.004.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.005.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.006.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.007.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Reading a 350x350 OpenEXR file from "normal.exr"
+Loading "meshes/Plane.008.obj" .. done. (V=4, F=2, took 0.0ms and 152 B)
+Loading "meshes/Spot_train.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Spot_car.obj" .. done. (V=1, F=0, took 0.0ms and 12 B)
+Loading "meshes/Cube.005.obj" .. done. (V=4316, F=1808, took 9.0ms and 156.1 KiB)
+Loading "meshes/Cube.007.obj" .. done. (V=4278, F=1808, took 9.0ms and 154.9 KiB)
+Loading "meshes/Cube.008.obj" .. done. (V=4342, F=1808, took 9.0ms and 156.9 KiB)
+Loading "meshes/Cube.009.obj" .. done. (V=4228, F=1808, took 7.0ms and 153.3 KiB)
+Loading "meshes/Cube.010.obj" .. done. (V=4326, F=1808, took 6.0ms and 156.4 KiB)
+Loading "meshes/Cube.011.obj" .. done. (V=4402, F=1808, took 7.0ms and 158.8 KiB)
+Loading "meshes/Cylinder.001.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.002.obj" .. done. (V=944, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.003.obj" .. done. (V=950, F=476, took 1.0ms and 35.3 KiB)
+Loading "meshes/Cylinder.004.obj" .. done. (V=946, F=476, took 1.0ms and 35.1 KiB)
+Loading "meshes/Cylinder.005.obj" .. done. (V=948, F=476, took 1.0ms and 35.2 KiB)
+Loading "meshes/ext_cover_wheel.obj" .. done. (V=82327, F=108416, took 554.0ms and 3.8 MiB)
+Loading "meshes/ext_support.obj" .. done. (V=38035, F=35882, took 229.0ms and 1.6 MiB)
+Loading "meshes/MainBody.obj" .. done. (V=291127, F=427860, took 2.4s and 13.8 MiB)
+Loading "meshes/seat.obj" .. done. (V=67487, F=117758, took 713.0ms and 3.4 MiB)
+Constructing a SAH BVH (31 meshes, 995593 triangles) .. done (took 1.3s and 64.6 MiB, SAH cost = 40.4452).
+
+Configuration: Scene[
+  integrator = VolPath[],
+  sampler = Independent[sampleCount=4000]
+  camera = PerspectiveCamera[
+    cameraToWorld = [  -0.7524, -0.009198,    0.6586,    -8.115;
+                     3.901e-07,    0.9999,   0.01396,    0.4657;
+                       -0.6587,   0.01051,   -0.7523,     16.24;
+                             0,         0,         0,         1],
+    outputSize = [3840, 2160],
+    fov = 39.597755,
+    clip = [0.100000, 1000.000000],
+    rfilter = GaussianFilter[radius=2.000000, stddev=0.500000]
+  ],
+  meshes = {
+    Mesh[
+      name = "meshes/Train.obj",
+      vertexCount = 378098,
+      triangleCount = 289967,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.000000, 0.000000, 0.000000],
+        ks = 1.000000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/top.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall1.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/wall2.obj",
+      vertexCount = 1232,
+      triangleCount = 1232,
+      bsdf = Diffuse[
+        albedo = [0.300000, 0.300000, 0.300000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/back.obj",
+      vertexCount = 0,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.001.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.002.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.003.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.004.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.005.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.006.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.007.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Plane.008.obj",
+      vertexCount = 4,
+      triangleCount = 2,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Spot_train.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Spot_car.obj",
+      vertexCount = 1,
+      triangleCount = 0,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.005.obj",
+      vertexCount = 4316,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = SpotLight[]
+    ],
+    Mesh[
+      name = "meshes/Cube.007.obj",
+      vertexCount = 4278,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.008.obj",
+      vertexCount = 4342,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.009.obj",
+      vertexCount = 4228,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.010.obj",
+      vertexCount = 4326,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cube.011.obj",
+      vertexCount = 4402,
+      triangleCount = 1808,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.001.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.002.obj",
+      vertexCount = 944,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.003.obj",
+      vertexCount = 950,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.004.obj",
+      vertexCount = 946,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/Cylinder.005.obj",
+      vertexCount = 948,
+      triangleCount = 476,
+      bsdf = Diffuse[
+        albedo = [0.400000, 0.235000, 0.000000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_cover_wheel.obj",
+      vertexCount = 82327,
+      triangleCount = 108416,
+      bsdf = Microfacet[
+        alpha = 0.280000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/ext_support.obj",
+      vertexCount = 38035,
+      triangleCount = 35882,
+      bsdf = Diffuse[
+        albedo = [0.750000, 0.750000, 0.750000]
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/MainBody.obj",
+      vertexCount = 291127,
+      triangleCount = 427860,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.700000, 0.200000, 0.200000],
+        ks = 0.300000
+      ],
+      emitter = null
+    ],
+    Mesh[
+      name = "meshes/seat.obj",
+      vertexCount = 67487,
+      triangleCount = 117758,
+      bsdf = Microfacet[
+        alpha = 0.080000,
+        intIOR = 1.700000,
+        extIOR = 1.000277,
+        kd = [0.100000, 0.100000, 0.100000],
+        ks = 0.900000
+      ],
+      emitter = null
+    ]
+  }
+]
+
+GLFW error 65544: X11: The DISPLAY environment variable is missing
+Could not initialize GLFW!

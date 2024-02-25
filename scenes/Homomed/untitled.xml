@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="volpath">
+      <color name="albedo" value="0.3 0.3 0.3"/>
+      <color name="sigmaT" value="0.01 0.01 0.01"/>
+      <float name="g" value="-0.7"/>
+      <point name="min" value="-30 -30 -30"/>
+      <point name="max" value="30 30 30"/>
+
+      <float name="attenuation" value="0.1"/>
+   </integrator>
+
+	<sampler type="independent">
+		<integer name="sampleCount" value="512"/>
+	</sampler>
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="4.371138828673793e-08,-4.3711398944878965e-08,1.0,-11.020508766174316,1.780702376663612e-07,1.0,4.371138828673793e-08,0.0,-1.0,1.780702376663612e-07,4.3711398944878965e-08,0.0,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Back.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75 0.75 0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Torus.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75 0.75 0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/FLoor.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75 0.75 0.75"/>
+		</bsdf>
+		<emitter type="spot">
+			<point name="position" value="0 10 0"/>
+			<color name="radiance" value="100 100 100"/>
+			<vector name="direction" value="0 -1 0"/>
+			<float name="angle" value="0.2"/>
+      	</emitter>
+		
+	</mesh>
+</scene>

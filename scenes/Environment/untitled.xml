@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="path_mis"/>
+	<sampler type="independent">
+		<integer name="sampleCount" value="32"/>
+	</sampler>
+		<texture type="texture">
+		<string name="filename" value="temp/right.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="temp/left.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="temp/up.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="temp/down.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="temp/front.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="temp/back.exr"/>
+	</texture>
+	<!-- <camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="-1.0,-2.220446313948109e-16,2.220446313948109e-16,0.0,-2.220446313948109e-16,1.0,4.371138828673793e-08,0.0,-2.220446313948109e-16,4.371138828673793e-08,-1.0,11.0,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera> -->
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="1.0,3.2584136988589307e-07,1.585368697486298e-14,0.0,-3.2584136988589307e-07,1.0,1.1924880638503055e-08,0.0,-1.1968067324934911e-14,-1.1924880638503055e-08,1.0,-11.0,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Suzanne.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Sphere.obj"/>
+		<bsdf type="dielectric">
+		</bsdf>
+	</mesh>
+</scene>
+

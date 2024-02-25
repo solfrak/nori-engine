@@ -1,0 +1,209 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="normals"/>
+	<sampler type="independent">
+		<integer name="sampleCount" value="32"/>
+	</sampler>
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="1000.0"/>
+		<integer name="width" value="1920"/>
+		<integer name="height" value="1080"/>
+		<transform name="toWorld">
+			<matrix value="-0.7524151802062988,-0.009197644889354706,0.6586249470710754,-8.11532211303711,3.901290881458408e-07,0.9999024868011475,0.013964004814624786,0.46569156646728516,-0.6586891412734985,0.01050698570907116,-0.7523418068885803,16.24013328552246,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Train.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/top.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/wall1.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/wall2.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/back.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.009.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Spot_train.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.011.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Spot_car.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Spot_crate.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.001.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.002.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.003.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.004.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.005.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.006.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.007.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.008.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.005.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.007.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.008.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.010.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cylinder.001.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cylinder.002.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cylinder.003.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cylinder.004.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cylinder.005.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/ext_cover_wheel.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/ext_support.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/MainBody.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/seat.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+</scene>

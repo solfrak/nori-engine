@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="path_mis"/>
+	<sampler type="independent">
+		<integer name="sampleCount" value="100"/>
+	</sampler>
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="-0.6859206557273865,-0.32401347160339355,-0.6515582203865051,7.358891487121582,0.0,0.8953956365585327,-0.44527140259742737,4.958309173583984,0.7276763319969177,-0.305420845746994,-0.6141703724861145,6.925790786743164,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.001.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cube.002.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.161 0.133 0.427"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.001.obj"/>
+		<emitter type="spot">
+			<point name="position" value="0 4 0"/>
+			<color name="radiance" value="40 40 40"/>
+			<vector name="direction" value="0 -1 0"/>
+			<float name="angle" value="30"/>
+      	</emitter>
+	</mesh>
+</scene>

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="volpath">
+		<color name="albedo" value="0.3 0.3 0.3"/>
+		<color name="sigmaT" value="0.01 0.01 0.01"/>
+		<float name="g" value="0.1"/>
+
+		<point name="min" value="-30 -30 -30"/>
+		<point name="max" value="30 30 30"/>
+
+		<float name="attenuation" value="0.01"/>
+
+	</integrator>
+	<sampler type="independent">
+		<integer name="sampleCount" value="10"/>
+	</sampler>
+
+	<texture type="texture">
+		<string name="filename" value="right.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="left.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="top.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="bottom.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="front.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="back.exr"/>
+	</texture>
+	
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="-1.4719687700271606,0.08163538575172424,1.9170937538146973,-18.898202896118164,-1.020754916680744e-05,2.41619873046875,-0.1028965562582016,3.913862705230713,-1.9188313484191895,-0.06263677775859833,-1.4706354141235352,16.151865005493164,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+		<emitter type="spot">
+			<point name="position" value="0 10 0"/>
+			<color name="radiance" value="40 40 40"/>
+			<vector name="direction" value="0 -1 0"/>
+			<float name="angle" value="0.5"/>
+      	</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Train.obj"/>
+			<bsdf type="microfacet">
+            <float name="intIOR" value="1.7"/>
+            <color name="kd" value="0.2 0.2 0.4"/>
+            <float name="alpha" value="0.28"/>
+		</bsdf>
+	</mesh>
+</scene>

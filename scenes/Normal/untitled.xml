@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="path_mis">
+		<float name="attenuation" value="1.0"/>
+	</integrator>
+	<sampler type="independent">
+		<integer name="sampleCount" value="256"/>
+	</sampler>
+	<!-- <texture type="texture">
+		<string name="filename" value="right.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="left.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="top.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="bottom.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="front.exr"/>
+	</texture>
+	<texture type="texture">
+		<string name="filename" value="back.exr"/>
+	</texture> -->
+
+	<camera type="perspective">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="100.0"/>
+		<integer name="width" value="500"/>
+		<integer name="height" value="500"/>
+		<transform name="toWorld">
+			<matrix value="-0.6859206557273865,-0.32401347160339355,-0.6515582203865051,7.358891487121582,0.0,0.8953956365585327,-0.44527140259742737,4.958309173583984,0.7276763319969177,-0.305420845746994,-0.6141703724861145,6.925790786743164,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Plane.obj"/>
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.75,0.75,0.75"/>
+		</bsdf>
+		<!-- <texture type="texture">
+			<string name="filename" value="meshes/normal.exr"/>
+		</texture> -->
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Sphere.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="5 5 5"/>
+		</emitter>
+	</mesh>
+</scene>
